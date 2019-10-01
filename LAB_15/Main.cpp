@@ -1,7 +1,6 @@
 
 #include "Header.h"
 
-using namespace std;
 int wmain(int agrc, wchar_t* agrv[])
 {
 	setlocale(LC_ALL, "RUSSIAN");
@@ -24,11 +23,7 @@ int wmain(int agrc, wchar_t* agrv[])
 		Log::WriteLT(lt, log, it);
 
 		Log::WriteLT_ALL(lt, log);
-		Log::WriteIT_ALL(it, log);/*
-		char ok = '$';
-		LT::Entry a; a.sn = lt.table[lt.size - 1].sn; a.lexema = '$';
-		LT::Add(lt, a);*/
-		// -------------------------27.9
+		Log::WriteIT_ALL(it, log);
 		MFST_TRACE_START				// отладка
 		MFST::Mfst mfst(lt, GRB::getGreibach());
 		mfst.start();

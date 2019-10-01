@@ -291,9 +291,9 @@ namespace MFST
 			break;
 		case NS_NORULE: MFST_TRACE4("------->NS_NORULE");
 			std::cout << "---------------------------------------------------------------  ----" << std::endl;
-			std::cout << getDiagnosis(0, buf) << std::endl;
+			std::cout << getDiagnosis(0, buf) << std::endl;/*
 			std::cout << getDiagnosis(1, buf) << std::endl;
-			std::cout << getDiagnosis(2, buf) << std::endl;
+			std::cout << getDiagnosis(2, buf) << std::endl;*/
 			break;
 		case NS_NORULLECHAIN:	MFST_TRACE4("------->NS_NORULENORULECHAIN") break;
 		case NS_ERROR:			MFST_TRACE4("------->NS_ERROR") break;
